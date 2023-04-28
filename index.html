@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:ital,wght@0,300;0,400;1,100&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/916d435c2e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+
+<body >
+    <header>
+        <nav class="color-1">
+            <ul class="nav-list">
+                <div class="list-item color-4">
+                    <li onclick="refresh()">Home</li>
+                    <li onclick="scrollDown()">Academic</li>
+                    <li onclick="scrollDown()">Projects</li>
+                    <li onclick="scrollDown()">Contact Me</li>
+
+                </div>
+                <div class="toggle">
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="switch">
+                        <span class="toggle-slider"></span>
+                    </label>
+
+                </div>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="page1 color-2 color-4">
+            <img src="images/totoro1.png" alt="illustration" class="illustration0">
+            <div class="left1">
+                <p class="bio">
+                    Hey, Welcome to my portfolio website, </br> My name is Jitender, and I'm passionate about web development. I have good understanding of design principles, and I enjoy creating visually
+                    engaging and intuitive user interfaces that provides a seamless online experience for users. I'm
+              keen to learn and grow as a developer, and I'm looking forward to contribute my skills and ideas
+                    to impactful projects. </br> To learn more about me and my work, please feel free to scroll down
+                    or download my resume. </br> Thanks for stopping by!
+                </p>
+                <a href="resume/Resume.pdf" download>
+                    <button id="download-resume" class=" color-3-bg" onclick="button(this)">Resume</button>
+                </a>
+
+                <!-- <button id="download-resume">Resume</button> -->
+            </div>
+            <div class="right1">
+                <img src="images/img.jpeg" alt="my-image" class="img">
+                <div class="name">
+                    <p>Jitender Singh</p>
+                </div>
+                <div class="socials ">
+                    <div class="git-hub icon" onmouseover="scaleUpI(this)" onmouseout="scaleDownI(this)">
+                        <a href="https://github.com/Jitender2003" target="_blank"><i
+                                class="fa-brands fa-github color-3"></i></a>
+                    </div>
+                    <div class="linkdin icon" onmouseover="scaleUpI(this)" onmouseout="scaleDownI(this)">
+                        <a href="https://www.linkedin.com/in/jitender-singh-43311921b/" target="_blank"><i
+                                class="fa-brands fa-linkedin color-3"></i></a>
+                    </div>
+                    <div class="behance icon" onmouseover="scaleUpI(this)" onmouseout="scaleDownI(this)">
+                        <a href="https://www.behance.net/jitenderrautelabe" target="_blank"><i
+                                class="fa-brands fa-square-behance color-3 "></i></a>
+                    </div>
+                    <div class="instagram icon" onmouseover="scaleUpI(this)" onmouseout="scaleDownI(this)">
+                        <a href="https://www.instagram.com/jeet.draws/" target="_blank"><i
+                                class="fa-brands fa-instagram color-3"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- <img src="images/2.png" alt="" class="image"> -->
+        </div>
+        <div class="page2">
+            <div class="left2 ">
+                <div class="top1 color-2 transformation">
+                    <h4 class="color-3">Academic</h4>
+                    <div class="education color-4">
+                        <div class="cllg">
+                            <p class="year">(2020-present)</p>
+                            <p class="course">B.Sc(hons) CS</p>
+                            <p class="cllg-name">
+                                Delhi college of arts and commerce.
+                            </p>
+                            <p class="result">8.48CGPA</p>
+                        </div>
+                        <div class="school2">
+                            <p class="year">(2018-2020)</p>
+                            <p class="course">12th</p>
+                            <p class="cllg-name">
+                                Ayan national public school.
+                            </p>
+                            <p class="result">95.33%</p>
+                        </div>
+                        <div class="school1">
+                            <p class="year">(2016-2018)</p>
+                            <p class="course">10th</p>
+                            <p class="cllg-name">
+                                Shambhu dayal public school.
+                            </p>
+                            <p class="result">77.8%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom1 color-2 transformation">
+                    <h3 class="tech-skills color-3">Technical-Skills</h3>
+                    <div class="tech-logos">
+                        <i class="fa-brands fa-java" title="java"></i>
+                        <i class="fa-brands fa-js" title="javaScript"></i>
+                        <i class="fa-brands fa-html5" title="html"></i>
+                        <i class="fa-brands fa-css3-alt" title="css"></i>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="right2 ">
+                <div class="top2 color-2 transformation">
+                    <h4 class="color-3">Projects</h4>
+                    <div class="web-projects color-4">
+                        <div class="project">
+                            <p class="work-year">(MAR,2023-APR,2023)</p>
+                            <p class="web-name">OPUS</p>
+                            <p class="description">
+                                Opus is a responsive music playing website, which lets users to play a selection
+                                of songs. Users can navigate through the song list, play, pause, and skip to the
+                                next or previous song. It is built using HTML, CSS, and JavaScript.
+                            </p>
+                        </div>
+                        <div class="project">
+                            <p class="work-year">(DEC,2022-JAN,2023)</p>
+                            <p class="web-name">DAILY-LIST</p>
+                            <p class="description">
+                                Daily-List is a simple web-based to-do list application built with HTML, CSS,
+                                JavaScript. It allows user to create, edit, and delete tasks, and persist the data
+                                using local storage.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom2 color-2 transformation">
+                    <h3 class="links color-3">Project-Links</h3>
+                    <div class="opus">
+                        <a href="https://jitender2003.github.io/Opus_web/" target="_blank"><img src="images/Opus.png"
+                                alt="Opus-logo"> </a>
+                        <p class="color-4">Opus</p>
+                    </div>
+                    <div class="daily-list">
+                        <a href="https://jitender2003.github.io/DailyList/" target="_blank"><img
+                                src="images/Daily-list.png" alt="Daily-list-logo"> </a>
+                        <p class="color-4">Daily-List</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer class="color-1 color-4">
+        <img src="images/totoro.png" alt="random-illustration" class="illustration">
+        <i class="fa-regular fa-circle-up" id="scroll-up" onclick="scrollUp()" title="Scroll to Top"></i>
+
+        <div class="contact">
+            <i class="fa-solid fa-envelope "></i>
+            <p>jitenderrautel0@gmail.com </p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
